@@ -30,13 +30,16 @@ print(train_set_scaled)
  [-1.22474487  1.22474487 -1.06904497]]
 '''
 
-test = np.array([[2., 3., 1.],
-                 [0., 1., 5.]])
-test_set_scaled = standard_scaler.transform(test)
-print(test_set_scaled)
+
+# 注意顶部的说明，均值为0，方差为1
+x2 = np.array([[1., -1., 2., 2., 0., 0., 0., 1., -1.]])
+
+scaler2 = StandardScaler()
+scaler2.fit(x2)
+scaled = scaler2.transform(x2)
+print(scaled)
 '''
-[[ 1.22474487  3.67423461  0.53452248]
- [-1.22474487  1.22474487  3.74165739]]
+[[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]]
 '''
 
 
