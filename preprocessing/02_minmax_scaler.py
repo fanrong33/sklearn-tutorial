@@ -54,3 +54,21 @@ print(raw_data)
 '''
 
 
+# 测试分批训练是否可得同样的结果，测试结果证明，无法通过分批来训练Scaler
+x3 = np.array([[12], [12], [11]])
+x4 = np.array([[10], [9]])
+scaler3 = MinMaxScaler(feature_range=(0, 1))
+scaler3.fit(x3)
+scaler3.fit(x4)
+raw_data = scaler3.inverse_transform([[1.], [1.], [0.66666667], [0.]])
+print(raw_data)
+'''
+[[ 10.        ]
+ [ 10.        ]
+ [  9.66666667]
+ [  9.        ]]
+'''
+
+
+
+
