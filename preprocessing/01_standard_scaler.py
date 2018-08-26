@@ -30,14 +30,21 @@ print(x_scaled)
  [-1.22474487  1.22474487 -1.06904497]]
 '''
 
+x2 = np.array([[2., 1., -1.]])
+x_scaled2 = standard_scaler.transform(x2)
+print(x_scaled2)
+'''
+[[ 1.22474487  1.22474487 -1.06904497]]
+'''
+
 
 # 注意顶部的说明，均值为0，方差为1
-x2 = np.array([[1., -1., 2., 2., 0., 0., 0., 1., -1.]])
+x3 = np.array([[1., -1., 2., 2., 0., 0., 0., 1., -1.]])
 
 standard_scaler2 = StandardScaler()
-standard_scaler2.fit(x2)
-x2_scaled = standard_scaler2.transform(x2)
-print(x2_scaled)
+standard_scaler2.fit(x3)
+x3_scaled = standard_scaler2.transform(x3)
+print(x3_scaled)
 '''
 [[ 0.  0.  0.  0.  0.  0.  0.  0.  0.]]
 '''
