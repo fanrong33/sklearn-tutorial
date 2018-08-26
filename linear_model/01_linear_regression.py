@@ -2,6 +2,7 @@
 """ 线性回归  预测 糖尿病
 
  * [Diabetes数据集线性回归：最小平方回归](https://blog.csdn.net/kt513226724/article/details/79801317)
+ * [sklearn.linear_model.LinearRegression](http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression)
 """
 import numpy as np
 from sklearn import datasets, linear_model
