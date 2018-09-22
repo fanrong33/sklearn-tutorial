@@ -1,4 +1,7 @@
-print(__doc__)
+# encoding: utf-8
+""" k-means 聚类
+http://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html
+"""
 
 # Author: Phil Roth <mr.phil.roth@gmail.com>
 # License: BSD 3 clause
