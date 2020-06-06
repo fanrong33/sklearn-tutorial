@@ -1,6 +1,10 @@
 # encoding: utf-8
 """ k-means 聚类
 http://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html
+
+cd /Users/fanrong33/kuaipan/github/sklearn-tutorial/cluster/
+python 01_kmeans.py
+
 """
 
 # Author: Phil Roth <mr.phil.roth@gmail.com>
